@@ -18,7 +18,7 @@ test("check page title", async ({ page }) => {
   expect(actualTitle).toBe(driversPage.meta.title);
 });
 
-test.only("check page content", async ({ page }) => {
+test("check page content", async ({ page }) => {
   await page.goto("https://tda-cmsv2.able.do/drivers");
 
   const actualHeading = await page
