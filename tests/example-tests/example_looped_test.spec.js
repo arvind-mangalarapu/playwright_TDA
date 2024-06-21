@@ -13,7 +13,6 @@ const homePage = testData[17];
 test.only("check home page content", async ({ page }) => {
   await page.goto("https://tda-cmsv2.able.do/");
 
-  // Define checks array with actual and expected values directly in each object
   const checks = [
     {
       expected: homePage.meta.title,
