@@ -1,3 +1,5 @@
+// not yet compleated
+
 const { test, expect } = require("@playwright/test");
 const fs = require("fs");
 const path = require("path");
@@ -27,7 +29,6 @@ test("check home page content", async ({ page }) => {
     .map((child) => child.text)
     .join("");
 
-  // Logging the concatenated string
   console.log(titleText);
 
   // tests
