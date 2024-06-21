@@ -106,7 +106,6 @@ test.only("check home page content", async ({ page }) => {
     },
   ];
 
-  // Loop through the checks array and perform the checks
   for (const check of checks) {
     const actualValue = await check.actual(page);
     expect(actualValue).toBe(check.expected);
