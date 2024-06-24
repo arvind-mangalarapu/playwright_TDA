@@ -8,7 +8,7 @@ const testData = JSON.parse(rawData);
 
 console.log("Parsed JSON data:", testData);
 
-const homePage = testData[17];
+const homePage = (slug) => testData.find((page) => page.slug === slug);
 
 test.only("check home page content", async ({ page }) => {
   await page.goto("https://tda-cmsv2.able.do/");
